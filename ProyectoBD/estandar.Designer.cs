@@ -58,10 +58,17 @@
             textBox9 = new TextBox();
             textBox10 = new TextBox();
             label4 = new Label();
+            dataGridView1 = new DataGridView();
+            panel3 = new Panel();
+            button9 = new Button();
+            button6 = new Button();
+            button7 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             groupBox1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -74,9 +81,9 @@
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(button2);
-            panel1.Location = new Point(-14, 464);
+            panel1.Location = new Point(-14, 487);
             panel1.Name = "panel1";
-            panel1.Size = new Size(885, 123);
+            panel1.Size = new Size(885, 100);
             panel1.TabIndex = 0;
             // 
             // button5
@@ -90,7 +97,7 @@
             button5.ForeColor = Color.Navy;
             button5.Location = new Point(563, 15);
             button5.Name = "button5";
-            button5.Size = new Size(105, 76);
+            button5.Size = new Size(105, 55);
             button5.TabIndex = 9;
             button5.Text = "LIMPIAR ";
             button5.UseVisualStyleBackColor = false;
@@ -106,7 +113,7 @@
             button4.ForeColor = Color.Navy;
             button4.Location = new Point(26, 15);
             button4.Name = "button4";
-            button4.Size = new Size(105, 76);
+            button4.Size = new Size(105, 55);
             button4.TabIndex = 8;
             button4.Text = "AGREGAR";
             button4.UseVisualStyleBackColor = false;
@@ -122,7 +129,7 @@
             button3.ForeColor = Color.Navy;
             button3.Location = new Point(738, 15);
             button3.Name = "button3";
-            button3.Size = new Size(105, 76);
+            button3.Size = new Size(105, 55);
             button3.TabIndex = 7;
             button3.Text = "SALIR";
             button3.UseVisualStyleBackColor = false;
@@ -138,7 +145,7 @@
             button1.ForeColor = Color.Navy;
             button1.Location = new Point(379, 15);
             button1.Name = "button1";
-            button1.Size = new Size(105, 76);
+            button1.Size = new Size(105, 55);
             button1.TabIndex = 6;
             button1.Text = "BORRAR";
             button1.UseVisualStyleBackColor = false;
@@ -154,7 +161,7 @@
             button2.ForeColor = Color.Navy;
             button2.Location = new Point(203, 15);
             button2.Name = "button2";
-            button2.Size = new Size(105, 76);
+            button2.Size = new Size(105, 55);
             button2.TabIndex = 5;
             button2.Text = "MODIFICAR";
             button2.UseVisualStyleBackColor = false;
@@ -402,6 +409,76 @@
             label4.TabIndex = 2;
             label4.Text = "label4";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(15, 309);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(811, 166);
+            dataGridView1.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel3.BackColor = Color.Navy;
+            panel3.BackgroundImageLayout = ImageLayout.Stretch;
+            panel3.Controls.Add(button7);
+            panel3.Controls.Add(button6);
+            panel3.Controls.Add(button9);
+            panel3.Location = new Point(15, 255);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(814, 45);
+            panel3.TabIndex = 10;
+            // 
+            // button9
+            // 
+            button9.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button9.BackColor = SystemColors.ButtonFace;
+            button9.BackgroundImageLayout = ImageLayout.Center;
+            button9.FlatAppearance.BorderColor = Color.Navy;
+            button9.FlatStyle = FlatStyle.Flat;
+            button9.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            button9.ForeColor = Color.Navy;
+            button9.Location = new Point(28, 11);
+            button9.Name = "button9";
+            button9.Size = new Size(105, 24);
+            button9.TabIndex = 6;
+            button9.Text = "EXTRA";
+            button9.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            button6.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button6.BackColor = SystemColors.ButtonFace;
+            button6.BackgroundImageLayout = ImageLayout.Center;
+            button6.FlatAppearance.BorderColor = Color.Navy;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            button6.ForeColor = Color.Navy;
+            button6.Location = new Point(350, 10);
+            button6.Name = "button6";
+            button6.Size = new Size(105, 24);
+            button6.TabIndex = 7;
+            button6.Text = "EXTRA";
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            button7.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button7.BackColor = SystemColors.ButtonFace;
+            button7.BackgroundImageLayout = ImageLayout.Center;
+            button7.FlatAppearance.BorderColor = Color.Navy;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Font = new Font("Arial Rounded MT Bold", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            button7.ForeColor = Color.Navy;
+            button7.Location = new Point(682, 10);
+            button7.Name = "button7";
+            button7.Size = new Size(105, 24);
+            button7.TabIndex = 8;
+            button7.Text = "EXTRA";
+            button7.UseVisualStyleBackColor = false;
+            // 
             // estandar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -409,6 +486,8 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = SystemColors.GradientActiveCaption;
             ClientSize = new Size(841, 567);
+            Controls.Add(panel3);
+            Controls.Add(dataGridView1);
             Controls.Add(groupBox1);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -423,6 +502,8 @@
             groupBox1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel3.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -458,5 +539,10 @@
         private TextBox textBox8;
         private TextBox textBox9;
         private TextBox textBox10;
+        private DataGridView dataGridView1;
+        private Panel panel3;
+        private Button button7;
+        private Button button6;
+        private Button button9;
     }
 }

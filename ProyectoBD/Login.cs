@@ -15,7 +15,7 @@ namespace ProyectoBD
         private void button1_Click(object sender, EventArgs e)
         {
             // Crear una instancia del segundo formulario (Form2)
-            estandar form2 = new estandar();
+            Modulos form2 = new Modulos();
 
             // Mostrar el segundo formulario
             form2.Show();
