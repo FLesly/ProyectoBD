@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             Acceso = new GroupBox();
-            button1 = new Button();
-            Usuario = new TextBox();
-            textBox2 = new TextBox();
-            label1 = new Label();
             label2 = new Label();
+            label1 = new Label();
+            textBox2 = new TextBox();
+            Usuario = new TextBox();
+            button1 = new Button();
             Acceso.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,7 +46,7 @@
             Acceso.Controls.Add(Usuario);
             Acceso.Controls.Add(button1);
             Acceso.Font = new Font("Arial Rounded MT Bold", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            Acceso.ForeColor = SystemColors.HotTrack;
+            Acceso.ForeColor = Color.Navy;
             Acceso.Location = new Point(286, 127);
             Acceso.Name = "Acceso";
             Acceso.Size = new Size(252, 258);
@@ -54,21 +54,37 @@
             Acceso.TabStop = false;
             Acceso.Text = "Bienvenido";
             // 
-            // button1
+            // label2
             // 
-            button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            button1.BackColor = SystemColors.HotTrack;
-            button1.BackgroundImageLayout = ImageLayout.Center;
-            button1.FlatAppearance.BorderColor = SystemColors.MenuHighlight;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = SystemColors.HighlightText;
-            button1.Location = new Point(6, 188);
-            button1.Name = "button1";
-            button1.Size = new Size(240, 39);
-            button1.TabIndex = 0;
-            button1.Text = "Iniciar Sesión ";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            label2.AutoSize = true;
+            label2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.Navy;
+            label2.Location = new Point(6, 100);
+            label2.Name = "label2";
+            label2.Size = new Size(100, 18);
+            label2.TabIndex = 4;
+            label2.Text = "contraseña";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.Navy;
+            label1.Location = new Point(6, 38);
+            label1.Name = "label1";
+            label1.Size = new Size(70, 18);
+            label1.TabIndex = 3;
+            label1.Text = "Usuario";
+            label1.Click += label1_Click;
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = SystemColors.Window;
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Location = new Point(6, 121);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(240, 22);
+            textBox2.TabIndex = 2;
             // 
             // Usuario
             // 
@@ -84,37 +100,23 @@
             Usuario.TabIndex = 1;
             Usuario.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox2
+            // button1
             // 
-            textBox2.BackColor = SystemColors.Window;
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Location = new Point(6, 121);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(240, 22);
-            textBox2.TabIndex = 2;
+            button1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button1.BackColor = Color.Navy;
+            button1.BackgroundImageLayout = ImageLayout.Center;
+            button1.FlatAppearance.BorderColor = SystemColors.MenuHighlight;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = SystemColors.HighlightText;
+            button1.Location = new Point(6, 188);
+            button1.Name = "button1";
+            button1.Size = new Size(240, 39);
+            button1.TabIndex = 0;
+            button1.Text = "Iniciar Sesión ";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(6, 38);
-            label1.Name = "label1";
-            label1.Size = new Size(70, 18);
-            label1.TabIndex = 3;
-            label1.Text = "Usuario";
-            label1.Click += label1_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(6, 100);
-            label2.Name = "label2";
-            label2.Size = new Size(100, 18);
-            label2.TabIndex = 4;
-            label2.Text = "contraseña";
-            // 
-            // Form1
+            // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -123,7 +125,7 @@
             ClientSize = new Size(841, 567);
             Controls.Add(Acceso);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Name = "Form1";
+            Name = "Login";
             Text = "Registro";
             Acceso.ResumeLayout(false);
             Acceso.PerformLayout();
